@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI Enrollment Form | STI College Davao</title>
+<style>
+    body
+    {
+        background-color: rgb(255, 251, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 25px 50px 75px 100px;
+    }
+
+    .form
+    {
+        background-color: rgb(0, 160, 255);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 30px;
+        border-radius: 3rem;
+    }
+
+    #submit_button
+    {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+
+    #submit_button.hover
+    {
+        background-color: rgb(140, 210, 255);;
+    }
+
+    #reset_button
+    {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+
+    #reset_button:hover 
+    {
+        background-color: rgb(140, 210, 255);;
+    }
+
+    form input
+    {
+        border-radius: 2rem;
+        padding: 3px;
+    }   
+
+</style>
+
+</head>
+    <body>
+        <h1>STI Enrollment Form</h1>
+        <p>For Upcoming 1st Year College Students</p>
+
+        <form class="form">
+            <div>
+                First Name:
+            </div>
+
+                <div>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter your First Name">
+                </div>
+
+            <div>
+                Middle Initial:
+            </div>
+
+                <div>
+                    <input type="text" id="middle_initial" name="middle_initial" placeholder="Enter your Middle Initial">
+                </div>
+
+            <div>
+                Last Name:
+            </div>
+
+                <div>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter your Last Name">
+                </div>
+
+            <div>
+                <label for="birthdate">Birthdate:</label>
+                <br />
+                <input type="date" name="birthdate">
+            </div>
+
+            <div>
+                Address:
+            </div>
+
+                <div>
+                    <input type="text" id="address" name="address" placeholder="Enter your Address">
+                </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <br />
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <label for="course">Select Course:</label>
+            <br />
+                <input type="radio" name="course" value="BSIT">BSIT
+                <br />
+                <input type="radio" name="course" value="BSCS">BSCS
+                <br />
+                <input type="radio" name="course" value="BSCpE">BSCpE
+                <br />
+                <input type="radio" name="course" value="BSTM">BSTM
+                <br />
+                <input type="radio" name="course" value="BSHM">BSHM
+                <br />
+
+            <div>
+                School Last Attended:
+            </div>
+
+            <div>
+                <input type="text" id="school_last_attended" name="school_last_attended" placeholder="Enter your School Last Attended">
+            </div>
+
+            <div >
+                <button type="submit" id="submit_button">Submit</button><br />
+            </div>
+
+            <div >
+                <button type="reset" id="reset_button">Reset</button><br />
+            </div>
+        </form>
+    </body>
+</html>
